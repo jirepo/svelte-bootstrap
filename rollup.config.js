@@ -45,6 +45,7 @@ export default {
 	},
 	plugins: [
 		svelte({
+			// Svelte 컴포넌트의 style 섹션에서 scss를 쓰기 위한 설정
 			preprocess: sveltePreprocess({ 
 				sourceMap: !production,
 				scss: {
@@ -81,6 +82,7 @@ export default {
 			inlineSources: !production
 		}),
 		postcss({
+			// src 아래의 css 파일들 및 Svelte component 안의 css를 global.css로 생성 
             //includePaths: ['src/**/*'], // 이거는 의미가 없음
             extensions: ['.css', '.scss', '.sass'],  // 설정된 확장자로 끝나는 파일들을 처리,
             // bundle.js가 생성되는 디렉터리에 global.css 파일이 생성 된다.
