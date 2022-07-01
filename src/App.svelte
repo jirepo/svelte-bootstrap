@@ -1,14 +1,24 @@
 <script lang="ts">
 import NaonCard from './component/NaonCard.svelte';
 import NaonBaseButton from './component/NaonBaseButton.svelte';
+
+import { Button, ButtonGroup } from 'sveltestrap';
+
+
+
 </script>
 
 <div class="main">
     <div >
-        top 
+        <ButtonGroup>
+            <Button active>Alpha</Button>
+            <Button>Bravo</Button>
+            <Button>Charlie</Button>
+          </ButtonGroup>        
+
     </div>
     <div>
-        <NaonCard/>
+        <NaonCard card />
     </div>
     <div>
         <NaonBaseButton/>

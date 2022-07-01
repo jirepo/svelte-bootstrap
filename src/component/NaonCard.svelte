@@ -1,5 +1,6 @@
 <script>
-
+   export let card=false; 
+   console.log("card:" + card);
 </script>
 
 
